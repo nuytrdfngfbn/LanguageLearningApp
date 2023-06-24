@@ -1,0 +1,24 @@
+class LanguageLearningApp:
+    def __init__(self):
+        self.languages = []
+
+    def add_language(self, language):
+        self.languages.append(language)
+        print(f"Language '{language}' added successfully.")
+
+    def view_languages(self):
+        if not self.languages:
+            print("No languages added.")
+        else:
+            print("Languages:")
+            for language in self.languages:
+                print(language)
+
+if __name__ == '__main__':
+    language_learning_app = LanguageLearningApp()
+
+    language_learning_app.add_language("English")
+    language_learning_app.add_language("Spanish")
+    language_learning_app.add_language("French")
+
+    language_learning_app.view_languages()
